@@ -129,7 +129,7 @@ function showDescription() {
   if (this.children.length < 2) {
     let desc = document.createElement("div")
     desc.classList.add('descProcess');
-    desc.innerHTML = processInfo[0];
+    desc.innerHTML = processInfo[this.dataset.index];
     this.appendChild(desc)
   } else {
     this.children[1].remove()
