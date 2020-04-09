@@ -303,6 +303,96 @@ html {
   max-width: 150rem;
 }
 
+/* Process */
+@keyframes processFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-6rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+.descProcess {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  max-width: 160rem;
+  animation-name: processFadeIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.descProcess-half {
+  width: 48%;
+  max-width: 100rem;
+  min-width: 70rem;
+  background-color: rgb(217, 217, 217);
+  box-sizing: border-box;
+  border-radius: 2rem;
+  padding: 4rem;
+}
+
+.processTitle {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  font-weight: 600;
+  color: #383737;
+  text-transform: uppercase;
+  width: 65%;
+  margin-bottom: 1.6rem;
+}
+
+.processText {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  color: #c8102e;
+  margin-bottom: 2rem;
+}
+
+.processText li {
+  margin-bottom: 1rem;
+}
+
+.processLarge {
+  font-size: 4rem;
+  line-height: 4.2rem;
+  font-weight: 600;
+  width: 100%;
+  color: #C8202F;
+  letter-spacing: .2rem;
+  margin-bottom: .5rem;
+}
+
+.processSmall {
+  font-size: 2em;
+  margin-bottom: .5rem;
+}
+
+
+.margin-large {
+  margin-bottom: 3rem;
+}
+
+.space-out {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.about_btn {
+  width: 100%;
+}
+
 /* Contact page */
 @keyframes lidFlip {
   0% {
@@ -572,47 +662,47 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin: 0 2rem;
+  margin: 0 .5rem;
   flex-wrap: wrap;
 }
 
 .box-within {
   width: 15%;
-  min-width: 23rem;
+  min-width: 13rem;
   max-width: 28rem;
   background-color: #C81028;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  height: 20rem;
+  height: 15rem;
   border-radius: 1rem;
   margin: 2rem 3rem;
 }
 
 .box-within h4 {
-  font-size: 3rem;
+  font-size: 1.6rem;
   color: white;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .box-within {
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: white;
   font-weight: 200;
   text-transform: uppercase;
 }
 
 .box-within-unit {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 /*Our secret*/
 .grid-color {
   background-color: #DDDDDD;
   border-radius: 1rem;
-  margin: 4rem;
+  margin: 1rem;
   max-width: 150rem;
   display: flex;
   flex-direction: column;
@@ -623,7 +713,7 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin: 0 2rem;
+  margin: 0 0.5rem;
   flex-wrap: wrap;
 }
 
@@ -631,13 +721,13 @@ html {
   font-size: 2rem;
   font-weight: 400;
   color: #C81028;
-  width: 45%;
+  width: 95%;
   max-width: 46rem;
   min-width: 18rem;
   text-align: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 3rem;
+  margin: 1rem;
 }
 
 .grid-box * {
@@ -730,6 +820,16 @@ html {
   .beerTitle {
     font-size: 4.5rem;
   }
+  .grid-box {
+    margin: 3rem;
+    width: 45%;
+  }
+  .grid-of-4 {
+    margin: 0 2rem;
+  }
+  .grid-color {
+    margin: 4rem;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -750,5 +850,27 @@ html {
 
   .home-guide__button img {
     height: 20rem;
+  }
+  .boxes-of-4 {
+    margin: 0 2rem;
+  }
+
+  .box-within {
+    min-width: 23rem;
+    max-width: 28rem;
+    height: 20rem;
+    margin: 2rem 3rem;
+  }
+
+  .box-within h4 {
+    font-size: 3rem;
+  }
+
+  .box-within {
+    font-size: 2rem;
+  }
+
+  .box-within-unit {
+    font-size: 5rem;
   }
 }
